@@ -1,0 +1,37 @@
+# Requirements Application: Main box file (https://app.vagrantup.com/laravel/boxes/homestead)
+---------------------------------------------------------------------------------------------
+1. Virtualbox Install
+2. Vagrant install
+3. Git for Windows/Mac
+4. Edit Vagrantfile 
+	#e.g.: config.vm.box_url = "file:///E:/dev/homestead.box"
+ 	#e.g.: config.vm.synced_folder "dev_data", "/dev_data"
+
+5. Open git bash for commands  
+	$ vagrent init 
+	$ vagrnat up
+	$ vagrant ssh 
+	$ cd /dev_data
+	$ laravel new blog
+	$ cd blog
+	$ php artisan serve --host 0.0.0.0
+
+check your brower (localhost:8000)
+
+6. Check other info
+	$ php -v
+	$ mysql --version 
+	$ php artisan -v
+
+
+#Notes:
+--------------
+mysql -u homestead -p
+secret
+
+
+# git configuration
+====================
+$ git config --list
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+$ cat .ssh/id_rsa.pub
